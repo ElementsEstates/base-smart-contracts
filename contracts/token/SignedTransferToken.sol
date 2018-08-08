@@ -21,7 +21,7 @@ contract SignedTransferToken is BaseToken {
 
 
   // Mapping of already executed settlements for a given address
-  mapping(address => mapping(bytes32 => bool)) executedSettlements;
+  mapping(address => mapping(bytes32 => bool)) internal executedSettlements;
 
   /**
   * @dev Will settle a pre-signed transfer

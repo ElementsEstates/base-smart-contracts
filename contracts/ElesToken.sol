@@ -10,7 +10,7 @@ contract ElesToken is CappedToken, PausableSignedTransferToken  {
   uint256 public decimals = 18;
 
   // Max supply of 250 million
-  uint256 public maxSupply = 250000000 * 10**decimals;
+  uint256 internal maxSupply = 250000000 * 10**decimals;
 
   constructor()
     CappedToken(maxSupply) public {
